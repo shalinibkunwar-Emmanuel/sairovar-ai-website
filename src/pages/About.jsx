@@ -45,8 +45,8 @@ export default function About() {
             <p className="comparison__text">Students run localized model weights on physical sandbox kits, see abstract vectors fail/succeed immediately, and reverse-engineer parameters. We prioritize intuitive hand-built logical creation first.</p>
           </div>
         </div>
-        <div style={{ background: 'linear-gradient(135deg, var(--primary-lightest), var(--primary-light))', borderRadius: 16, padding: 48, marginTop: 48, textAlign: 'center' }}>
-          <h3 style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 32, color: 'var(--primary-dark)', marginBottom: 12 }}>Ready to bring sovereign tech to your classroom?</h3>
+        <div style={{ background: 'linear-gradient(135deg, var(--bg-tint), var(--bg-tint))', borderRadius: 16, padding: 48, marginTop: 48, textAlign: 'center' }}>
+          <h3 style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 32, color: 'var(--primary)', marginBottom: 12 }}>Ready to bring sovereign tech to your classroom?</h3>
           <p style={{ fontSize: 16, color: 'var(--body-text)', marginBottom: 24, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Explore our physical sandbox blueprints, download teacher guidebooks, or register as a mentor of record in Punjab's public excellence chapters.</p>
           <Link to="/learning" className="btn btn--primary">Explore How We Learn</Link>
         </div>
