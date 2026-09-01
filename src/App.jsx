@@ -12,10 +12,14 @@ import Teachers from './pages/Teachers'
 import Stories from './pages/Stories'
 import Resources from './pages/Resources'
 import GetInvolved from './pages/GetInvolved'
+import StudentPortal from './pages/StudentPortal'
+import MentorPortal from './pages/MentorPortal'
+import './styles/global.css'
 
 export default function App() {
   return (
     <Routes>
+      {/* Main site with shared header/footer */}
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -30,6 +34,9 @@ export default function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/get-involved" element={<GetInvolved />} />
       </Route>
+      {/* Portal pages with their own header/footer */}
+      <Route path="/student-portal" element={<StudentPortal />} />
+      <Route path="/mentor-portal" element={<MentorPortal />} />
     </Routes>
   )
 }
