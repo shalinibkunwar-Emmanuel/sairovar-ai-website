@@ -15,6 +15,7 @@ import GetInvolved from './pages/GetInvolved'
 import StudentPortal from './pages/StudentPortal'
 import MentorPortal from './pages/MentorPortal'
 import './styles/global.css'
+import './styles/portal.css'
 
 export default function App() {
   return (
