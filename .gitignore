@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output — Netlify regenerates this on every deploy.
+dist/
+
+# Netlify local state
+.netlify/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

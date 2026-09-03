@@ -1,0 +1,9 @@
+# Vite fingerprints bundle filenames, so those can be cached permanently.
+/assets/index-*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Image filenames are stable and get replaced in place when new artwork is
+# exported, so they must revalidate — otherwise an updated image would stay
+# hidden behind a stale cache entry.
+/assets/images/*
+  Cache-Control: public, max-age=0, must-revalidate

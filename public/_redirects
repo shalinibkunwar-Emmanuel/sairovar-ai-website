@@ -1,0 +1,4 @@
+# React Router resolves routes in the browser, so every path that is not a real
+# file on disk must still return the app shell instead of a 404. Existing files,
+# including everything under /assets/, are matched before this rule.
+/*  /index.html  200

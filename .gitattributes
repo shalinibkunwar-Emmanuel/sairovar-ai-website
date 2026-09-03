@@ -1,0 +1,19 @@
+# Treat binary assets as binary. Without this, a tool or editor that guesses
+# "text" can rewrite line endings inside an image and silently corrupt it.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.avif binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.pdf  binary
+*.mp4  binary
+*.webm binary
+
+# SVG is text; keep it diffable but pinned to LF.
+*.svg text eol=lf

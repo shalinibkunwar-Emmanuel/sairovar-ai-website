@@ -1,0 +1,11 @@
+# Build settings are pinned here rather than left implicit in dashboard settings,
+# so the deploy is reproducible from the repository alone.
+# Routing lives in public/_redirects and caching in public/_headers; Vite copies
+# both into dist/ during the build.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

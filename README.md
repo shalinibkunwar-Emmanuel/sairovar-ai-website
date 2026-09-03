@@ -24,7 +24,23 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Verify every image is real binary data and resolves
+npm run check:images
 ```
+
+## Adding images
+
+Export from Figma, then upload the files to `public/assets/images/` using
+GitHub's **Add file → Upload files** (or `git add`), never by pasting file
+contents into a new-file text box — that stores the image as base64 text and it
+renders blank. Filenames map directly to where each image appears on the site.
+
+Run `npm run check:images` before pushing; it fails with the filename if any
+image is not real binary data or is referenced but missing.
+
+**See [docs/IMAGES.md](docs/IMAGES.md)** for the filename-to-slot table,
+recommended export sizes, and the full workflow.
 
 ## Project Structure
 

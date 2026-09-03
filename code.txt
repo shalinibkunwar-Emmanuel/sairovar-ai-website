@@ -1,3 +1,0 @@
-git add public/assets/images/
-git commit -m "chore: add hero banner images"
-git push origin main
